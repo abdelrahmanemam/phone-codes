@@ -67,3 +67,23 @@ The application follows **clean architecture** and applies **SOLID principles** 
 - SOLID-compliant design – easier to extend and test
 - Framework-agnostic domain – reusable across contexts
 - Maintainable – localized changes with minimal ripple effects
+
+---
+
+## How to Try It (Laravel)
+
+1. **Clone the repository**
+    - git clone repository-url
+    - cd project-folder
+
+2. Install dependencies
+   - composer install
+
+3. Set up environment
+   - cp .env.example .env
+   - php artisan key:generate
+   - Configure database (SQLite by default) by moving the attached db to database/
+     
+4. Ready to go
+   - php artisan migrate
+   - php artisan serve
